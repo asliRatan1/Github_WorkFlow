@@ -1,0 +1,52 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    
+    z
+    <lightning:select name="select1" label="Salution" >
+        <option value="">None</option>
+        <option value="Mr.">Mr.</option>
+        <option value="Mrs.">Ms.</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Dr.">Dr.</option>
+        <option value="Prof.">Prof.</option>
+        
+    </lightning:select>  
+    
+	<lightning:input  label="First Name" placeholder="First Name"/>
+    <lightning:input  label="Last Name" placeholder="Last Name" required="true"/>
+      <lightning:input type="tel" label="Phone" name="phone1" placeholder="999-999-9999" />
+    <lightning:input type="tel" label="Home Phone" name="phone1" placeholder="999-999-9999" />
+    <lightning:input type="tel" label="Mobile" name="phone1" placeholder="999-999-9999" />
+    <lightning:input type="tel" label="Other Phone" name="phone1" placeholder="999-999-9999" />
+    <lightning:input  label="Title" placeholder="Title"/>
+    <lightning:input  label="Department" placeholder="Department"/>
+    <lightning:input type="date" name="input4" label="BirthDay" placeholder="your Birthday"/>
+    <lightning:input type="email" name="email3" placeholder="youraddress@company.com" label="Email field with a placeholder" />
+    
+	  <lightning:select name="select1" label="Salution" >
+          
+          <option value="">None</option>
+          <option value="Web">Web</option>
+          <option value="Phone Enquiry">Phone Enquiry</option>
+          <option value="Patner Refferal">Patner Refferal</option>
+          <option value="Purchase List">Purchase List</option>
+          <option value="Other">Other</option>
+          
+    </lightning:select>  
+    <lightning:input  label="Fax" placeholder="Fax"/>
+    <lightning:input  label="Assisstant" placeholder="Assisstant"/>
+    <lightning:input type="tel" label="Assisstant Number" name="phone1" placeholder="999-999-9999" />
+    
+        <!-- Success variant: Identifies a successful action -->
+    <lightning:button variant="success" label="Submit Here" title="Success" onclick="{! c.handleClick }"/>s
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</aura:component>

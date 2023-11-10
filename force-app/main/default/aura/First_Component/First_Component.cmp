@@ -1,0 +1,20 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	 
+    <aura:attribute name="fName" type="String"/>
+    <aura:attribute name="mName" type="String"/>
+    <aura:attribute name="lName" type="String"/>
+    <aura:attribute name="dValue" type="Date"/>
+    <aura:attribute name="eValue" type="String"/>
+    
+    
+    <lightning:input name="input3" label="First Name" placeholder="First Name" value="{!v.fName}"  />
+     <lightning:input name="input3" label="Middle Name" placeholder="Middle Name"  value="{!v.mName}"/>
+     <lightning:input name="input3" label="Last Name" placeholder="Last Name"  value="{!v.lName}"/>
+    <lightning:input type="date" name="input4" label="Date Of Birth" placeholder="dd/mm/yyyy"  value="{!v.dValue}"  />
+    <lightning:input type="email" name="email3" placeholder="youraddress@company.com" label="Your Email"  value="{!v.eValue}" />
+    
+    
+    <!-- Success variant: Identifies a successful action -->
+    <lightning:button variant="success" label="Submit Here" title="Success" onclick="{! c.handleClick }"/>
+	    
+</aura:component>

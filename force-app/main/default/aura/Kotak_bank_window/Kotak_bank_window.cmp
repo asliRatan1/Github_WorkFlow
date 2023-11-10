@@ -1,0 +1,36 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+                access="global"
+                controller ="Kotak_bank_window_controller">
+	
+    
+    <aura:attribute name="showValue" type="boolean" default="true"/>
+    	<aura:attribute name="options" type="List" default="[
+    {'label': 'Saving', 'value': 'option1'},
+    {'label': 'Current', 'value': 'option2'},
+    {'label': 'OD', 'value': 'option2'}
+    ]"/>
+    <aura:attribute name="value" type="String" default="option1"/>
+
+    
+    
+    
+      <aura:if isTrue="{!v.showValue}">
+    	 
+    <lightning:radioGroup name="radioGroup"
+                          label="Choose Account Type"
+                          options="{! v.options }"
+                          value="{! v.value }"
+                          type="radio"/>
+    <lightning:button variant="brand" label="Next" title="Brand action" onclick="{! c.handleClick }" />
+
+    <aura:set attribute="else">
+          
+    </aura:set>
+  </aura:if> 
+    
+    
+    
+    
+    
+    
+</aura:component>

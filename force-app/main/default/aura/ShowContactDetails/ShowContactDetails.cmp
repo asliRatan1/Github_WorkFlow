@@ -1,0 +1,68 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"
+                access="global" 
+                controller = "ShowContactDetails">
+    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:attribute name="classDetails" type="ShowContactDetails"/>
+ 
+    
+    <aura:attribute name="Fname" type="string"/>
+    <aura:attribute name="Lname" type="string"/>
+    <aura:attribute name="Ename" type="string"/>
+    
+    <aura:attribute name="conName" type="Contact"/>
+    
+    
+    
+   
+    
+    <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+  <div class="slds-size_1-of-2">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">First Name: {!v.conName.FirstName} </div>
+  </div>
+  <div class="slds-size_1-of-2">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Last Name: {!v.conName.LastName}</div>
+  </div>
+  <div class="slds-size_2-of-2">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Email: {!v.conName.Email}</div>
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    <!--
+    
+ <div class="row">
+     
+     <h2 class="Header"> Fill the Info to Create Contact</h2>
+     
+    <lightning:input name="FirstName" label="FirstName" placeholder="FirstName" value="{!v.Fname}"/>
+     <lightning:input name="LastName" label="LastName" placeholder="LastName" value="{!v.Lname}"/>
+     <lightning:input name="Email" label="Email" placeholder="Email" value="{!v.Ename}"/>
+    </div>
+          <lightning:button variant="brand" label="Submit Here" title="Brand action" onclick="{! c.saveContact}" />
+
+    
+    -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</aura:component>
