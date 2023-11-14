@@ -5,12 +5,10 @@ trigger AssetDateIsDifferent on Asset (after insert, after update) {
     for(Asset ass : trigger.new){
         if(ass.AccountId !=Null){
             setId.add(ass.AccountId);
+            
         }
     }
 
-
-    
-        
     List<Account> accList = [SELECT Id, Asset_Minimum_Expiration_Date__c, (SELECT UsageEndDate FROM Assets) FROM Account WHERE Id in : setId];
     List<Account> accUpdate = new List<Account>();
     for(Account acc : accList){
