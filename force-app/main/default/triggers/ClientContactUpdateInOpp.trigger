@@ -7,6 +7,11 @@ trigger ClientContactUpdateInOpp on Opportunity (after update) {
             oppId.add(opp.Id);
         }
     }
+
+
+
+
+    
     List<Opportunity> oppList = [SELECT Id, Client_Contact__c, AccountId FROM Opportunity WHERE Id in :oppId];
     List<Account> accList =  new List<Account>();
 
