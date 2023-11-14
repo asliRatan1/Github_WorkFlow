@@ -17,11 +17,6 @@ trigger ClientContactUpdateInOpp on Opportunity (after update) {
         accList.add(acc);
     }
     
-
-
-
-
-    
     update accList;
     
 }
