@@ -1,14 +1,6 @@
 trigger ClientContactUpdateInOpp on Opportunity (after update) {
     
     set<Id> oppId = new set<Id>();
-    
-
-
-
-
-
-
-    
     for(Opportunity opp : trigger.new){
         if(opp.Id != null){
             oppId.add(opp.Id);
