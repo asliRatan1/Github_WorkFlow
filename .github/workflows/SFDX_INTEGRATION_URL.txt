@@ -1,0 +1,1 @@
+sfdx force:auth:jwt:grant --clientid=3MVG9n_HvETGhr3DqX7DO.hahy_0XIloltFmWgZdn75K2dxAUEYSCjyf9YcIfMNrleKP.X9B93Fk9gClI6AUA --jwtkeyfile=C:\Users\anmol\Downloads\code.key --username=anmolratantiwari@shinywise.com --setdefaultdevhubusername --setalias devjwt
