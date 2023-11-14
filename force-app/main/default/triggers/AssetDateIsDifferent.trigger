@@ -19,6 +19,12 @@ trigger AssetDateIsDifferent on Asset (after insert, after update) {
                 minDate = ass.UsageEndDate;
             }
         }
+
+
+
+
+
+        
         
         acc.Asset_Minimum_Expiration_Date__c = minDate;
         accUpdate.add(acc);
